@@ -5,7 +5,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         double subtotal = pedirDouble(scanner, "Subtotal: ");
-        double total = subtotal;
+        double descuento = subtotal*.10;
+        double total = subtotal-descuento;
 
         System.out.printf("Total a pagar: %.2f%n", total);
     }
