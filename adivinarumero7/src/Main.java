@@ -48,9 +48,9 @@ public class Main {
             else{
                 System.out.println("El dato debe de ser numerico");
                 leer.next();
-
             }
         }
     }
+
 
 }
