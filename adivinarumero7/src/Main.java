@@ -1,5 +1,8 @@
 import java.util.*;
 public class Main {
+    static int cuantorango = 0;
+    static int cuantonum = 0;
+
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         Random ran = new Random();
@@ -15,6 +18,8 @@ public class Main {
             intentos++;
             if (numero == secreto){
                 System.out.println("has ganado en el intento " + intentos);
+                System.out.println("te pasaste del rango: "+cuantorango+ " veces");
+                System.out.println("Introduciste valores no numericos : "+cuantonum+ " veces");
                 gano = true;
                 return;
             }else if (numero>secreto){
@@ -28,6 +33,10 @@ public class Main {
         }
         if (!gano){
             System.out.println("Perdiste, el numero secreto era: "+secreto);
+            System.out.println("te pasaste del rango: "+cuantorango+ " veces");
+            System.out.println("Introduciste valores no numericos : "+cuantonum+ " veces");
+
+
         }
     }
 
@@ -43,11 +52,13 @@ public class Main {
                 }
                 else {
                     System.out.println("Rango equivocado (1 - 100)");
+                    cuantorango++;
                 }
             }
             else{
                 System.out.println("El dato debe de ser numerico");
                 leer.next();
+                cuantonum++;
             }
         }
     }
