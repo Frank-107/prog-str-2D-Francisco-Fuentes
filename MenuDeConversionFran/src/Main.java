@@ -1,5 +1,6 @@
 import java.util.*;
 public class Main {
+    public static int c1, c2, c3, c4 = 0;
     public static void main(String[] args){
         int opcion = 0;
         boolean condicion = false;
@@ -32,6 +33,9 @@ public class Main {
                 break;
             case 5 :
                 System.out.println("Selecionaste salir");
+                System.out.println("Usted realizo este numero de converisones:");
+                System.out.println("C a F: "+c1+"\nF a C: "+c2+"\nKm a Millas: "+c3+"\nMillas a Km: "+c4);
+
                 return;
         }}
 
@@ -42,30 +46,39 @@ public class Main {
         boolean numerico = false;
         System.out.println("Opcion elegida: C a F");
         System.out.println("¿Cual es el valor?");
-        do {
-            if (leer.hasNextInt()){
-                variable = leer.nextDouble();
-                numerico=true;
-                leer.next();
-            }
-            else{
-                System.out.println("El valor ingresado no es numerico");
-            }
-        }
-        while(numerico);
-        return (variable*(9/5))+32;
+       while(!leer.hasNextDouble()){
+           System.out.println("No es un valor numerico");
+           System.out.println("¿Cual es el valor?");
+           leer.next();
+       }
+       variable = leer.nextDouble();
+       c1++;
+
+        return (variable * 9.0 / 5.0) + 32;
     }
     public static double fac(Scanner leer){
         double variable = 0;
         System.out.println("Opcion elegida: F a C");
         System.out.println("¿Cual es el valor?");
+        while(!leer.hasNextDouble()){
+            System.out.println("No es un valor numerico");
+            System.out.println("¿Cual es el valor?");
+            leer.next();
+        }
         variable = leer.nextDouble();
-        return (variable-32)*(5/9);
+        c2++;
+        return (variable - 32) * (5.0 / 9.0);
     }
     public static double kam(Scanner leer){
         double variable = 0;
         System.out.println("Opcion elegida: Km a Millas");
         System.out.println("¿Cual es el valor?");
+        while(!leer.hasNextDouble()){
+            System.out.println("No es un valor numerico");
+            System.out.println("¿Cual es el valor?");
+            leer.next();
+        }
+        c3++;
         variable = leer.nextDouble();
         return (variable*0.621371);
     }
@@ -73,6 +86,12 @@ public class Main {
         double variable = 0;
         System.out.println("Opcion elegida: Millas a Km");
         System.out.println("¿Cual es el valor?");
+        while(!leer.hasNextDouble()){
+            System.out.println("No es un valor numerico");
+            System.out.println("¿Cual es el valor?");
+            leer.next();
+        }
+        c4++;
         variable = leer.nextDouble();
         return (variable*1.60934);
     }
