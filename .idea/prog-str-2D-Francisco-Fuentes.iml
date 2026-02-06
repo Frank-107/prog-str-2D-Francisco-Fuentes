@@ -8,6 +8,8 @@
       <sourceFolder url="file://$MODULE_DIR$/trabajos u1/MergeWithConflict/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/trabajos u1/MergeWithOutConflict/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MenuDeConversionFran/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CotizadorDeEnvios/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ejemplo_clases/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
