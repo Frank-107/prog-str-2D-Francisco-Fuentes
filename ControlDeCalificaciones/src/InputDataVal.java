@@ -11,7 +11,6 @@ public String NombreNoVacio(Scanner leer) {
         }
     }
 }
-
 public double getCalification(Scanner leer, int numero){
     System.out.println("Introduce la calificacion N "+numero+" En rango 1-100");
     while(true){
@@ -25,12 +24,8 @@ public double getCalification(Scanner leer, int numero){
         }
         System.out.println("Introduce un valor decimal");
         leer.next();
-
-
     }
-
 }
-
 public int getValidAsistencia(Scanner leer){
     System.out.println("Introduce tu numero de asistencias Rango 1-100");
     while(true){
@@ -56,10 +51,4 @@ public boolean validEntregoProyecto(Scanner leer){
         leer.next();
     }
 }
-
-
-
-
-
-
 }

@@ -3,7 +3,6 @@ public class GradeService {
     double calcularPromedio(double a, double b, double c){
         return (a+b+c)/3;
     }
-
     double calcularFinal(double promedio, int asistencia){
         return (promedio*0.7)+(asistencia*0.3);
     }
@@ -20,7 +19,4 @@ public class GradeService {
             return "Aprobado";
         }
     }
-
-
-
 }
