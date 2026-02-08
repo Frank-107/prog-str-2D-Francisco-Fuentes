@@ -14,8 +14,6 @@ public class InputDataVal {
             else{
                 System.out.println("No es un dato numerico");
                 leer.next();
-
-
             }
         }
     }
@@ -36,7 +34,6 @@ public class InputDataVal {
         }
 
     }
-
     public boolean getValidBoolean(Scanner leer){
         while(true){
             System.out.println("Su paquete va hacia alguna zona remota? (true/false)");
@@ -49,7 +46,4 @@ public class InputDataVal {
 
         }
     }
-
-
-
 }

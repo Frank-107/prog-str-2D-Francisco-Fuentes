@@ -39,7 +39,6 @@ public class ShoppingCalculator {
     private void calcularTotal(double subtotal, double IVA){
         this.total = subtotal+IVA;
     }
-
     public void imprimirTicket(int servicio, double peso, int distancia, boolean zona){
         System.out.print("El tipo de servicio fue el: ");
         if (servicio==1) {
@@ -58,11 +57,4 @@ public class ShoppingCalculator {
         System.out.println("El iva fue de: "+this.iva);
         System.out.println("El total sera de: "+this.total);
     }
-
-
-
-
-
-
-
 }

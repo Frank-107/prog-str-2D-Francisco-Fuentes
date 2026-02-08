@@ -24,12 +24,4 @@ class Main{
         shoppingCalculator.imprimirTicket(tipoServicio,pesoKg,distanciaKm,zonaRemota);
 
     }
-
-
-
-
-
-
-
-
 }
