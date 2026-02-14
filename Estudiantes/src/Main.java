@@ -1,25 +1,20 @@
 import java.util.*;
 class Main{
     public static void main(String[] args) {
-
         Scanner leer = new Scanner(System.in);
         Alumno[] alumnos = new Alumno[25];
         ProcesosDeAlumno procesosDeAlumno = new ProcesosDeAlumno();
-
-
         int opcion;
-
         while(true){
-            System.out.println("Que accion quieres realizar \n 1) Alta alumno \n 2) Buscar por ID \n 3) Actualizar promedio por ID\n 4) Baja logica \n 5) Listar archivos \n 6) Reportes \n 0) Salir");
+            System.out.println("Que accion quieres realizar \n 1) Alta alumno \n 2) Buscar por ID \n 3) Actualizar promedio por ID\n 4) Baja logica \n 5) Listar activos \n 6) Reportes \n 0) Salir");
             opcion = leer.nextInt();
             leer.nextLine();
             switch (opcion){
                 case (1):
                     procesosDeAlumno.alta(alumnos);
-                    System.out.println(alumnos[0]);
                     break;
                 case (2):
-                    System.out.println("Buscar por id");
+                    procesosDeAlumno.buscarPorId(alumnos);
                     break;
                 case (3):
                     procesosDeAlumno.promedioNuevo(alumnos);
@@ -28,18 +23,14 @@ class Main{
                     procesosDeAlumno.baja(alumnos);
                     break;
                 case (5):
-                    System.out.println("activos");
+                    procesosDeAlumno.listarActivos(alumnos);
                     break;
                 case (6):
-                    System.out.println("reportes");
+                    procesosDeAlumno.reporte(alumnos);
                     break;
                 case (0):
                     return;
             }
         }
-
-
-
-
     }
 }

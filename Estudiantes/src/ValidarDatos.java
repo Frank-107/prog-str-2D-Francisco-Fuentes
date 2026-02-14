@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
 public class ValidarDatos {
-
     public int validarid(Scanner leer){
         while (true){
             System.out.println("Introduce el id");
@@ -37,7 +35,6 @@ public class ValidarDatos {
             }
         }
     }
-
     public String validarNombre(Scanner leer){
         while(true){
             System.out.println("Cual es el nombre");
@@ -47,12 +44,6 @@ public class ValidarDatos {
             }else{
                 System.out.println("No se admiten vacios");
             }
-
-
         }
     }
-
-
-
-
 }
