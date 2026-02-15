@@ -1,13 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-
-
         Perro fido = new Perro("fido");
         Gato raul = new Gato("Raul");
-
         fido.comer();
         fido.hacerSonido();
-
         raul.comer();
         raul.hacerSonido();
         System.out.println("------------");
